@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programming Languages</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-image: url(home_backg.png);
+      background-size: cover;
+      background-position: center;
+    }
+    a.language-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      width: 90%;
+      margin: 40px auto;
+      border-radius: 15px;
+      overflow: hidden;
+      background-color: white;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    a.language-link:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      height: 400px;
+    }
+
+    .image-box {
+      flex: 1.2;
+      text-align: center;
+      background-color: #d6e1e6;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .image-box img {
+      width: 300px;
+      height: 300px;
+      object-fit: contain;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    a.language-link:hover .image-box img {
+      transform: scale(1.08);
+    }
+
+    .text-box {
+      flex: 2;
+      padding: 50px;
+    }
+
+    .text-box h2 {
+      font-size: 2.2rem;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .text-box p {
+      font-size: 1.3rem;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+        height: auto;
+      }
+
+      .image-box {
+        width: 100%;
+        height: 250px;
+      }
+
+      .text-box {
+        padding: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="https://www.python.org/" target="_blank" class="language-link">
+    <div class="container">
+      <div class="image-box">
+        <img src="python.png" alt="Python logo">
+      </div>
+      <div class="text-box">
+        <h2>Python</h2>
+        <p>A popular programming language known for its readability and versatility.</p>
+      </div>
+    </div>
+  </a>
+
+  <a href="https://isocpp.org/" target="_blank" class="language-link">
+    <div class="container">
+      <div class="image-box">
+        <img src="c++.png" alt="C++ logo">
+      </div>
+      <div class="text-box">
+        <h2>C++</h2>
+        <p>A powerful, high-performance language used for system and application development.</p>
+      </div>
+    </div>
+  </a>
+
+  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="language-link">
+    <div class="container">
+      <div class="image-box">
+        <img src="html.png" alt="HTML logo">
+      </div>
+      <div class="text-box">
+        <h2>HTML</h2>
+        <p>The language for building and structuring web pages.</p>
+      </div>
+    </div>
+  </a>
+
+  <a href="https://www.learn-c.org/" target="_blank" class="language-link">
+    <div class="container">
+      <div class="image-box">
+        <img src="c.png" alt="C logo">
+      </div>
+      <div class="text-box">
+        <h2>C</h2>
+        <p>A foundational programming language used to build many other languages and operating systems.</p>
+      </div>
+    </div>
+  </a>
+
+  <a href="https://www.java.com/" target="_blank" class="language-link">
+    <div class="container">
+      <div class="image-box">
+        <img src="java.png" alt="Java logo">
+      </div>
+      <div class="text-box">
+        <h2>Java</h2>
+        <p>A popular, object-oriented language widely used for enterprise applications and Android development.</p>
+      </div>
+    </div>
+  </a>
+
+  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="language-link">
+    <div class="container">
+      <div class="image-box">
+        <img src="css.png" alt="CSS logo">
+      </div>
+      <div class="text-box">
+        <h2>CSS</h2>
+        <p>The language for styling and designing web pages.</p>
+      </div>
+    </div>
+  </a>
+
+</body>
+</html>

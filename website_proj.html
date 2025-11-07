@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learn to Code | Home</title>
+
+  <style>
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      background-color: #f9f9f9;
+      scroll-behavior: smooth;
+    }
+    
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(30, 60, 55, 0.9);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding:16px 0px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      z-index: 1000;
+      backdrop-filter: blur(8px);
+    }
+
+    .navbar h1 {
+      font-size: 28px;
+      letter-spacing: 1px;
+    }
+
+    .navbar nav a {
+      color: white;
+      margin-left: 30px;
+      font-size: 18px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+      text-decoration: none;
+    }
+
+    .navbar nav a:hover {
+      color: #00c896;
+    }
+
+  
+    header {
+      position: relative;
+      height: 100vh;
+      background-image: url('project_photo.png');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 0 20px;
+      margin-top: 80px;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.45);
+      z-index: 1;
+    }
+
+    header h2,
+    header p,
+    header .btn {
+      position: relative;
+      z-index: 2;
+    }
+
+    header h2 {
+      font-size: 72px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+
+    header p {
+      font-size: 24px;
+      margin-bottom: 50px;
+      max-width: 600px;
+    }
+
+    header .btn {
+      display: inline-block;
+      background-color: #00c896;
+      color: white;
+      padding: 16px 36px;
+      border-radius: 8px;
+      font-size: 22px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    header .btn:hover {
+      background-color: #00a67a;
+      transform: translateY(-3px);
+    }
+
+    
+    main {
+      padding: 100px 20px;
+      background-color: white;
+      text-align: center;
+    }
+
+    main h2 {
+      font-size: 50px;
+      color: #007b5e;
+      margin-bottom: 20px;
+    }
+
+    main p {
+      font-size: 22px;
+      color: #555;
+      max-width: 850px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    
+    footer {
+      background-color: #f0f4f7;
+      padding: 80px 20px;
+      text-align: center;
+      border-top: 2px solid #e0e0e0;
+    }
+
+    footer h3 {
+      font-size: 36px;
+      color: #007b5e;
+      margin-bottom: 20px;
+    }
+
+    footer p {
+      font-size: 20px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    footer .btn {
+      background-color: #00c896;
+      color: white;
+      padding: 14px 28px;
+      border-radius: 6px;
+      font-size: 20px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    footer .btn:hover {
+      background-color: #00a67a;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        padding: 20px;
+      }
+      .navbar nav a {
+        margin: 10px 0;
+      }
+
+      header h2 {
+        font-size: 48px;
+      }
+
+      main h2 {
+        font-size: 36px;
+      }
+
+      main p {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+ 
+  <div class="navbar">
+    <h1>Learn to Code</h1>
+    <nav>
+      <a href="login_page.html">Login</a> 
+      <a href="#home">Home</a>
+      <a href="#courses">Courses</a>
+      <a href="about_page.html">About</a>
+     
+    </nav>
+  </div>
+
+  <header id="home">
+    <h2>LEARN TO CODE</h2>
+    <p>Join the world’s largest community of web developers and start building your future today.</p>
+    <a href="homepage.html" class="btn">Get Started</a>
+  </header>
+
+  <main id="courses">
+    <h2>Welcome to Your Coding Journey</h2>
+    <p>
+      Start learning programming languages like HTML, CSS, JavaScript, and Python from scratch. Explore easy tutorials, hands-on projects, and expert tips designed to help you master coding quickly and confidently.
+    </p>
+  </main>
+
+  <footer id="about">
+    <h3>About</h3>
+    <p>Discover more about this platform and how it can help you grow your coding skills.</p>
+    <a href="about_page.html" class="btn">Learn More</a>
+  </footer>
+</body>
+</html>
